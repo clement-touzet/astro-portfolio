@@ -1,0 +1,38 @@
+---
+interface Props {
+  demoHref: string;
+  codeHref: string;
+}
+
+const { demoHref, codeHref } = Astro.props;
+---
+
+{
+  demoHref != "" && codeHref != "" ? (
+    <div class="flex gap-4 mt-8 flex-wrap">
+      {demoHref != "" ? (
+        <a
+          href={demoHref}
+          type="button"
+          target="_blanck"
+          aria-label="demo"
+          class="font-semibold rounded border-[1px] text-white bg-black border-gray-300 px-8 py-2 cursor-pointer"
+        >
+          demo
+        </a>
+      ) : null}
+
+      {codeHref != "" ? (
+        <a
+          href={codeHref}
+          target="_blank"
+          type="button"
+          aria-label="code"
+          class="font-semibold rounded border-[1px] text-black border-black px-8 py-2 cursor-pointer"
+        >
+          code
+        </a>
+      ) : null}
+    </div>
+  ) : null
+}
