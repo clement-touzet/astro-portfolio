@@ -1,0 +1,22 @@
+---
+import ButtonGroupProject from "./ButtonGroupProject.tsx";
+interface Props {
+  title: string;
+  body: string;
+  codeHref: string;
+  demoHref: string;
+}
+
+const { codeHref, demoHref, title, body } = Astro.props;
+---
+
+<div class="w-full min-h-[80px] h-fit border-[1px] border-gray-300 rounded p-8">
+  <h4 class="text-lg font-bold mb-2">{title}</h4>
+  <div class="mb-2">
+    <slot />
+  </div>
+  <div class="">
+    <p>{body}</p>
+  </div>
+  <ButtonGroupProject codeHref={codeHref} demoHref={demoHref} />
+</div>

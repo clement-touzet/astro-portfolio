@@ -1,0 +1,56 @@
+---
+import Card from "./Card.astro";
+import ProgrammingStackLogo from "./ProgrammingStackLogo.astro";
+---
+
+<!-- Mes projets -->
+<div class="md:m-12 m-4 mt-12">
+  <h3 class="md:text-3xl text-2xl font-bold text-black mb-4">Mes Projets</h3>
+  <div class="grid md:grid-cols-2 gap-8 md:m-8 m-4">
+    <Card
+      title="Site de gestion d'évènement - Web3"
+      demoHref=""
+      codeHref=""
+      body="Le but de ce site a été de me familiariser avec la programmation blockchain et le web3. J'ai dû réalisé un contrat intelligent, puis faire le front-end afin de l'utiliser. J'ai aussi fait un tutoriel Youtube simplifié de ce projet car je voulais montrer comment réaliser un petit projet complet. "
+    >
+      <ProgrammingStackLogo>
+        <img
+          src="nextjs-logo.png"
+          alt="logo de Next js"
+          class="h-8 w-fit rounded-full"
+        />
+        <img src="hardhat-logo.png" alt="logo de hardhat " class="h-8 w-fit" />
+        <img
+          src="typescript-logo.png"
+          alt="logo de typescript "
+          class="h-8 w-fit"
+        />
+        <img
+          src="wagmi-logo.png"
+          alt="logo de wagmi "
+          class="h-8 w-fit rounded-full"
+        />
+        <img
+          src="chakra-ui-logo.png"
+          alt="logo de chakra ui "
+          class="h-8 w-fit"
+        />
+      </ProgrammingStackLogo>
+    </Card>
+    <Card
+      title="Refonte du site féerie sucrée"
+      demoHref="https://feerie-sucree-remake.vercel.app/"
+      codeHref="https://github.com/clement-touzet/feerie-sucree-remake"
+      body="Féerie sucrée est l'entreprise de ma mère. L'objectif de se projet était de faire son site pour qu'il soit plus moderne que son site actuel. Ce n'est pas la version finale, le site n'est pas encore terminé."
+    >
+      <ProgrammingStackLogo>
+        <img src="svelte-logo.png" alt="logo de svelte " class="h-8 w-fit" />
+        <img
+          src="skeleton-ui-logo.png"
+          alt="logo de skeleton ui"
+          class="h-8 w-fit rounded-full"
+        />
+      </ProgrammingStackLogo>
+    </Card>
+  </div>
+</div>
