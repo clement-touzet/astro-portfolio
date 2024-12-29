@@ -1,16 +1,16 @@
 ---
 interface Props {
   demoHref: string;
-  codeHref: string;
+  codeHref?: string;
 }
 
 const { demoHref, codeHref } = Astro.props;
 ---
 
 {
-  demoHref != "" && codeHref != "" ? (
+  demoHref || codeHref  ? (
     <div class="flex gap-4 mt-8 flex-wrap">
-      {demoHref != "" ? (
+      {demoHref ? (
         <a
           href={demoHref}
           type="button"
@@ -22,7 +22,7 @@ const { demoHref, codeHref } = Astro.props;
         </a>
       ) : null}
 
-      {codeHref != "" ? (
+      {codeHref ? (
         <a
           href={codeHref}
           target="_blank"
