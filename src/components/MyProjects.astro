@@ -1,4 +1,5 @@
 ---
+import { myProjects } from "../constants/myProjects";
 import Card from "./Card.astro";
 import ProgrammingStackLogo from "./ProgrammingStackLogo.astro";
 ---
@@ -35,7 +36,7 @@ import ProgrammingStackLogo from "./ProgrammingStackLogo.astro";
       title="Apprentissage de ExpressJS"
       demoHref=""
       codeHref="https://github.com/clement-touzet/express-js-first-project"
-      body="J'ai appris les bases d'express avec ce projet, afin d'enseigner les APIs à un client."
+      body="J'ai appris les bases d'express avec ce projet, afin d'enseigner son fonctionnement à mon client de coaching."
     >
       <ProgrammingStackLogo>
         <img
@@ -47,6 +48,35 @@ import ProgrammingStackLogo from "./ProgrammingStackLogo.astro";
           src="expressjs.png"
           alt="logo de typescript "
           class="h-8 w-fit"
+        />
+      </ProgrammingStackLogo>
+    </Card>
+    <Card
+      title="Application de films (en cours)"
+      demoHref=""
+      codeHref="https://github.com/clement-touzet/java-nextjs-films"
+      body="Application pour gérer une liste de films. Mon but avec ce projet est d'apprendre le Spring Boot"
+    >
+      <ProgrammingStackLogo>
+        <img
+        src="springboot.png"
+        alt="logo de springboot "
+        class="h-8 w-fit"
+        />
+        <img
+        src="java.png"
+        alt="logo de java "
+        class="h-8 w-fit"
+        />
+        <img
+        src="nextjs-logo.png"
+        alt="logo de Next js"
+        class="h-8 w-fit rounded-full"
+        />
+        <img
+        src="postgresql.png"
+        alt="logo de postgresl "
+        class="h-8 w-fit"
         />
       </ProgrammingStackLogo>
     </Card>
